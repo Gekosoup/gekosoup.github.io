@@ -9,73 +9,83 @@ body {
 }
 
 .wrapper {
-  margin: 0 auto;
+  margin: auto;
+  box-sizing: border-box;
+  padding: 60px 60px;
 }
 
 header {
   background-color: #aad4cf;
-  border-radius: 0em; 
-  box-sizing: border-box;
-  border: 5px #aad4cf;
   margin: auto;
 }
 
 #hero-banner {
-  background-image: url(../midterm-assets/lone-starfish-wide.jpg);
+  background-image: url(/midterm/midterm-assets/lone-starfish-wide.jpg);
   background-position: center;
-  padding-block-start: 10px;
-  margin-right: auto;
-  margin-left:  auto;
-  max-width: 1200px;
-  padding-right: 10px;
-  padding-left:  10px;
+  background-repeat: no-repeat; 
+  background-size: cover; 
 }
+  
 
 h1 {
   text-align: center;
   font-size: 7rem;
   font-family: sans-serif;
   color: white;
-  padding-block-start: 250px;
 }
 
 nav {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-items: baseline;
   color: black;
   text-align: right;
-  padding: 0px 0px ;
-  text-decoration: none;
-  font-size: 17px;
+  font-size: 40px;
 }
 
 nav > ul {
   color: black;
   display: flex;
   flex-direction: row;
-  gap: 50px;
-  justify-content:center;
-  padding-block-end: 20px;
+  align-items: stretch;
   list-style: none;
 }
 
 nav ul li {
-  border: 2px solid white;
-  padding: .5em .75em;
-  border-radius: 8px;
+  color: black;
+  padding: .25em 4.25em;
+  text-decoration: none;
+}
+
+nav a:link, nav a:visited {
+  color: black; 
+  border-left: 2px,0px,0px,0px black;
+  text-decoration: none;
+}
+
+nav a:hover, nav a:focus {
+  color: #aad4cf;
+}
+
+a:link{
+  color:#aad4cf;
+  text-decoration: none;
 }
 
 
-#starfish {
+#starfish, #facts {
   background-color: #aad4cf;
-    padding: 2em 0;
-    display: inline-block;
+  display: inline-block;
 }
 
-img {
-  width: 260px;
+aside > img {
+  width: 200px;
   float: left;
   margin-right: 2em;
+}
+
+footer {
+  background-color: #aad4cf;
+  margin: auto;
+  padding: 60px 60px;
 }
