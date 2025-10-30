@@ -5,28 +5,23 @@
 body {
   font-family: 'Nunito', sans-serif;
   line-height: 1.5;
-  color: #fff;
   margin: auto;
 }
 
 .wrapper {
-  max-width: 1200px;
   margin: 0 auto;
 }
 
 header {
   background-color: #aad4cf;
-  position: absolute;
   border-radius: 0em; 
   box-sizing: border-box;
   border: 5px #aad4cf;
-  overflow: hidden;
+  margin: auto;
 }
 
 #hero-banner {
   background-image: url(../midterm-assets/lone-starfish-wide.jpg);
-  width: 1200px;
-  height: 900px;
   background-position: center;
   padding-block-start: 10px;
   margin-right: auto;
@@ -60,12 +55,27 @@ nav > ul {
   color: black;
   display: flex;
   flex-direction: row;
-  gap: 20px;
-  justify-content:right;
+  gap: 50px;
+  justify-content:center;
   padding-block-end: 20px;
   list-style: none;
 }
 
+nav ul li {
+  border: 2px solid white;
+  padding: .5em .75em;
+  border-radius: 8px;
+}
+
+
 #starfish {
   background-color: #aad4cf;
+    padding: 2em 0;
+    display: inline-block;
+}
+
+img {
+  width: 260px;
+  float: left;
+  margin-right: 2em;
 }
