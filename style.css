@@ -1,29 +1,41 @@
-* {
-  box-sizing: border-box;
-}
+
 
 body {
   font-family: 'Nunito', sans-serif;
   line-height: 1.5;
-  margin: auto;
+  padding: 0px 0px;
+  box-sizing: border-box;
+  margin-right: auto;
+  margin-left:  auto;
+  max-width: 1200px;
+  box-sizing: border-box;
+  background-color: #aad4cf;
 }
 
 .wrapper {
-  margin: auto;
   box-sizing: border-box;
-  padding: 60px 60px;
+  background-color: #e2f9f7;
+  padding: 10px 30px;
+  margin: 50px 0px;
 }
 
 header {
-  background-color: #aad4cf;
-  margin: auto;
+  box-sizing: inline-block;
+  padding: 0px 0px;
+}
+
+main {
+  box-sizing: inline-block;
+  padding: 20px 0px;
 }
 
 #hero-banner {
   background-image: url(/midterm/midterm-assets/lone-starfish-wide.jpg);
   background-position: center;
   background-repeat: no-repeat; 
-  background-size: cover; 
+  background-size: fill;
+  padding: 25px;
+  background-size: 100% 100%;
 }
   
 
@@ -41,6 +53,7 @@ nav {
   color: black;
   text-align: right;
   font-size: 40px;
+  background-color: #e2f9f7;
 }
 
 nav > ul {
@@ -49,6 +62,7 @@ nav > ul {
   flex-direction: row;
   align-items: stretch;
   list-style: none;
+  padding: 0px 0px;
 }
 
 nav ul li {
@@ -74,8 +88,7 @@ a:link{
 
 
 #starfish, #facts {
-  background-color: #aad4cf;
-  display: inline-block;
+  padding: 0px 0px;
 }
 
 aside > img {
@@ -85,7 +98,15 @@ aside > img {
 }
 
 footer {
-  background-color: #aad4cf;
+  box-sizing: border-box;
+  background-color: #e2f9f7;
+  padding: 0px 0px;
   margin: auto;
-  padding: 60px 60px;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+small {
+  padding: 0px 50px;
 }
